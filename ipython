@@ -1,0 +1,24 @@
+###Step 1: Importing all the required libraries first.
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+import warnings
+warnings.filterwarnings(action="ignore", module="scipy",
+message="^internal gelsd")
+
+###Step 2: Importing the data which is in the form of .csv file. Then checking the
+first few rows.
+
+house_mlr = pd.read_csv('House_data.csv')
+house_mlr.head()
+
+###Step3: Exploring the data
+
+house_mlr.info()
+
+
+
+
